@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teacher's Month</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- =====================================
+         OPENING PAGE
+    ====================================== -->
+
+    <div class="opening" id="opening">
+
+        <div class="cover">
+
+            <div class="cover-icon">
+                💌
+            </div>
+
+            <h1>
+                A Letter For You
+            </h1>
+
+            <p>
+                A little appreciation for someone
+                who makes learning meaningful.
+            </p>
+
+            <button onclick="openLetter()">
+                Read My Letter
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         LETTER PAGE
+    ====================================== -->
+
+    <div class="letter-page" id="letterPage">
+
+        <div class="card">
+
+
+            <!-- HEART DECORATION -->
+
+            <div class="hearts-top">
+                💗 💖 💓 💗 💖
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Happy Teacher's Day! 💕
+            </h1>
+
+            <p class="subtitle">
+                A special message for an amazing teacher 🌷
+            </p>
+
+
+
+            <!-- =================================
+                 TEACHER PHOTO
+            ================================== -->
+
+            <div class="picture">
+
+                <img
+                    src="g1.jpg"
+                    alt="Our Amazing Teacher"
+                >
+
+            </div>
+
+
+
+            <!-- =================================
+                 MESSAGE
+            ================================== -->
+
+            <div class="message">
+
+                <p>
+                    💗 Dear Ma'am Jay Ann Lipan,
+                </p>
+
+
+                <p>
+                    Happy Teacher's Day po! Gusto ko lang po
+                    kayong pasalamatan sa lahat ng lessons,
+                    guidance, patience, at support na binigay
+                    ninyo sa amin mula Grade 11 hanggang
+                    Grade 12.
+                </p>
+
+
+                <p>
+                    Kahit nasa college na po ako ngayon,
+                    dala-dala ko pa rin yung mga natutunan
+                    ko sa inyo. Hindi lang po lessons sa school,
+                    kundi pati yung mga advice at encouragement
+                    na nakatulong sa akin habang lumalaki at
+                    nagpapatuloy sa pag-aaral.
+                </p>
+
+
+                <p>
+                    Nakakatuwa pong isipin na mula Grade 11
+                    hanggang ngayon na 2nd year college napo ako,
+                    isa kayo sa mga teachers na hindi ko
+                    makakalimutan.
+                </p>
+
+
+                <p>
+                    Maraming salamat po sa pagiging mabait at mabuting
+                    teacher at sa lahat ng effort na ginawa  ninyo para
+                    sa amin.
+                </p>
+
+
+                <p>
+                    Thank you for being part of my journey.
+                    I will always be grateful to have been
+                    your student. 💗
+                </p>
+
+
+                <p>
+                    Every lesson you teach, every reminder
+                    you give, and every word of encouragement
+                    helps us become better students.
+                </p>
+
+
+                <p>
+                    We may not always say it, but we truly
+                    appreciate your time, effort, and
+                    dedication.
+                </p>
+
+
+                <!-- QUOTE -->
+
+                <div class="quote">
+
+                    "A great teacher leaves a mark
+                    that lasts forever."
+
+                </div>
+
+
+                <!-- SIGNATURE -->
+
+                <p>
+                    With sincere appreciation,
+                    <br><br>
+
+                    <strong>
+                        Your Student, Manalo, Andrie M. ❤️
+                    </strong>
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SONG
+            ================================== -->
+
+            <div class="song-section">
+
+                <h3>
+                    🎵 💗 A Song for You 💗 🎵
+                </h3>
+
+                <p>
+                    Made with love just for you 💝
+                </p>
+
+                <audio controls>
+
+                    <source
+                        src="Eraserheads - With A Smile (Lyrics) [jjRaRL5uaQk].mp3" 
+                        type="audio/mpeg"
+                    >
+
+                    Your browser does not support audio.
+
+                </audio>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer>
+
+            Made with 💖 love 💖 —
+            Happy Teacher's Day 2026 🌷
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script>
+
+        function openLetter() {
+
+            const opening =
+                document.getElementById("opening");
+
+            const letterPage =
+                document.getElementById("letterPage");
+
+
+            // Hide the opening page
+            opening.classList.add("hide");
+
+
+            // Show the letter after the animation
+            setTimeout(function () {
+
+                letterPage.classList.add("show");
+
+                // Scroll to the top
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            }, 700);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
